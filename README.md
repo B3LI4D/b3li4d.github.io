@@ -1,105 +1,61 @@
-<div align="center">
+# Klisé
 
-  # Chirpy Jekyll Theme
-
-  A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
-
-  [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy?color=brightgreen)](https://rubygems.org/gems/jekyll-theme-chirpy)
-  [![Build Status](https://github.com/cotes2020/jekyll-theme-chirpy/workflows/build/badge.svg?branch=master&event=push)](https://github.com/cotes2020/jekyll-theme-chirpy/actions?query=branch%3Amaster+event%3Apush)
-  [![Codacy Badge](https://app.codacy.com/project/badge/Grade/4e556876a3c54d5e8f2d2857c4f43894)](https://www.codacy.com/gh/cotes2020/jekyll-theme-chirpy/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=cotes2020/jekyll-theme-chirpy&amp;utm_campaign=Badge_Grade)
-  [![GitHub license](https://img.shields.io/github/license/cotes2020/jekyll-theme-chirpy.svg)](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE)
-  [![996.icu](https://img.shields.io/badge/link-996.icu-%23FF4D5B.svg)](https://996.icu)
-
-  [**Live Demo →**](https://cotes2020.github.io/chirpy-demo)
-
-  [![Devices Mockup](https://raw.githubusercontent.com/cotes2020/chirpy-images/main/commons/devices-mockup.png)](https://cotes2020.github.io/chirpy-demo)
-
-</div>
+Klisé is minimalist Jekyll theme for running a personal site and blog running on Jekyll.<br>
+For demo <a href="https://klise.now.sh" target="_blank" rel="noopener">klise.now.sh</a>
 
 ## Features
 
-- Localized Layout
-- Dark/Light Theme Mode
-- Pinned Posts
-- Hierarchical Categories
-- Last Modified Date for Posts
-- Table of Contents
-- Auto-generated Related Posts
-- Syntax Highlighting
-- Mathematical Expressions
-- Mermaid Diagram & Flowchart
-- Disqus/Utterances/Giscus Comments
-- Search
-- Atom Feeds
-- Google Analytics
-- GA Pageviews Reporting
-- SEO & Performance Optimization
+- [x] Light & Dark Mode support :waxing_crescent_moon:
+- [x] Customizable (using `.scss`)
+- [x] Responsive (desktop, tab and mobile)
+- [x] Mobile First Design
+- [x] SEO Optimized
+- [x] Images of post Organized ([`jekyll-postfiles`](https://github.com/nhoizey/jekyll-postfiles))
+- [x] Generate Sitemap ([`jekyll-sitemap`](https://github.com/jekyll/jekyll-sitemap))
+- [x] RSS Feed ([`jekyll-feed`](https://github.com/jekyll/jekyll-feed))
+- [x] Syntax Highlighter ([`rouge`](https://github.com/rouge-ruby/rouge))
+- [x] Next & Previous Post
+- [x] Comment layout, enable in frontmatter if you wish
+- [x] Google analytics
+- [x] HTML Minify ([`jekyll-compress-html`](https://github.com/penibelst/jekyll-compress-html))
+- [x] W3C **Validated**
+- [x] Lighthouse and PageSpeed **Passed**
 
+![Lighthouse Result](./lighthouse.png)
 
-## Quick Start
+## Backlogs
 
-Before starting, please follow the instructions in the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installation of `Ruby`, `RubyGems`, `Jekyll`, and `Bundler`. In addition, [Git](https://git-scm.com/) is also required to be installed.
+- [ ] Intergrated with PhotoSwipe.
+- [ ] Add schema.org meta information.
+- [ ] Transform class selector to BEM metodology.
 
-### Step 1. Creating a New Site
+## Installation
 
-Create a new repository from the [**Chirpy Starter**](https://github.com/cotes2020/chirpy-starter/generate) and name it `<GH_USERNAME>.github.io`, where `GH_USERNAME` represents your GitHub username.
+Run local server:
 
-### Step 2. Installing Dependencies
-
-Before running for the first time, go to the root directory of your site, and install dependencies as follows:
-
-```console
-$ bundle
+```bash
+$ git clone https://github.com/piharpi/jekyll-klise.git
+$ cd jekyll-klise
+$ bundle install
+$ bundle exec jekyll serve
 ```
 
-### Step 3. Running Local Server
+Navigate to `localhost:4000`. You're Welcome, Fork and be Stargazer.
 
-Run the following command in the root directory of the site:
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/piharpi/jekyll-klise) [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/piharpi/jekyll-klise) [![Deploy to Azure button](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/?feature.customportal=false&WT.mc_id=javascript-0000-jopapa#create/Microsoft.StaticApp)
 
-```console
-$ bundle exec jekyll s
-```
+## Limitation
 
-Or run with Docker:
-
-```console
-$ docker run -it --rm \
-    --volume="$PWD:/srv/jekyll" \
-    -p 4000:4000 jekyll/jekyll \
-    jekyll serve
-```
-
-After a while, navigate to the site at <http://localhost:4000>.
-
-## Documentation
-
-For more details on usage, please refer to the tutorial on the [demo website](https://cotes2020.github.io/chirpy-demo/) / [wiki](https://github.com/cotes2020/jekyll-theme-chirpy/wiki). Note that the tutorial is based on the [latest tag](https://github.com/cotes2020/jekyll-theme-chirpy/tags), and the features of the default branch are usually ahead of the documentation.
+- Since [`jekyll-postfiles`](https://github.com/nhoizey/jekyll-postfiles#compatibility) plugin isn't supported by github pages, this cause will make your site problems, path broken or post images won't show up, you can host alternatively using likes [netlify.com](https://netlify.com), [vercel.com](https://vercel.com), [azure.com](https://docs.microsoft.com/azure/static-web-apps/publish-jekyll) or [surge.sh](https://surge.sh) services, which support 3rd party.
 
 ## Contributing
 
-Welcome to report bugs, improve code quality or submit a new feature. For more information, see [contributing guidelines](.github/CONTRIBUTING.md).
+If you see any typos or formatting errors in a post, or want to helping reduce backlogs or any other issue that needs to be addressed, please do not hesitate to open a pull request and fix it!, please read [contributing](./CONTRIBUTING.md) before PR.
 
-## Credits
+Yeaaa feel free to open a pull request.
+## Support
 
-This theme is mainly built with [Jekyll](https://jekyllrb.com/) ecosystem, [Bootstrap](https://getbootstrap.com/), [Font Awesome](https://fontawesome.com/) and some other wonderful tools (their copyright information can be found in the relevant files). The avatar and favicon design come from [Clipart Max](https://www.clipartmax.com/middle/m2i8b1m2K9Z5m2K9_ant-clipart-childrens-ant-cute/).
-
-:tada: Thanks to all the volunteers who contributed to this project, their GitHub IDs are on [this list](https://github.com/cotes2020/jekyll-theme-chirpy/graphs/contributors). Also, I won't forget those guys who submitted the issues or unmerged PR because they reported bugs, shared ideas, or inspired me to write more readable documentation.
-
-Last but not least, thank [JetBrains][jb] for providing the OSS development license.
-
-## Sponsoring
-
-If you like this theme or find it helpful, please consider sponsoring me, because it will encourage and help me better maintain the project, I will be very grateful!
-
-[![Ko-fi](https://img.shields.io/badge/-Buy%20Me%20a%20Coffee-ff5f5f?logo=ko-fi&logoColor=white)](https://ko-fi.com/coteschung)
-[![Wechat Pay](https://img.shields.io/badge/-Tip%20Me%20on%20WeChat-brightgreen?logo=wechat&logoColor=white)][cn-donation]
-[![Alipay](https://img.shields.io/badge/-Tip%20Me%20on%20Alipay-blue?logo=alipay&logoColor=white)][cn-donation]
-
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W7MJ4X) [![saweria.co](./assets/img/saweria-button.png)](https://saweria.co/piharpi)
 ## License
 
-This work is published under [MIT](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE) License.
-
-<!-- ReadMe links -->
-
-[jb]: https://www.jetbrains.com/?from=jekyll-theme-chirpy
-[cn-donation]: https://cotes.gitee.io/alipay-wechat-donation/
+This project is open source and available under the [MIT License](LICENSE).
